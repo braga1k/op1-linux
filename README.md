@@ -2,15 +2,15 @@
 
 An unofficial native Linux configurator for the **Endgame Gear OP1 8k v2** (`3367:1978`). English interface, GTK 4, no Wine or network required at runtime.
 
-**1.0.0-rc.1 is a release candidate.** Configuration read-back is tested on firmware **1.07**. It is not a certification of sensor performance. See the [acceptance matrix](docs/ACCEPTANCE.md) for exact coverage and remaining checks.
+**1.0.0 is the first stable release.** Configuration read-back is tested on firmware **1.07**. It is not a certification of sensor performance. See the [acceptance matrix](docs/ACCEPTANCE.md) for exact coverage and remaining checks.
 
-[Download the release candidate](https://github.com/braga1k/op1-linux/releases/tag/v1.0.0-rc.1) · [CI](https://github.com/braga1k/op1-linux/actions)
+[Download 1.0.0](https://github.com/braga1k/op1-linux/releases/tag/v1.0.0) · [CI](https://github.com/braga1k/op1-linux/actions)
 
 ![Basic settings](docs/screenshots/basic-900.png)
 
 ## Install
 
-Runtime dependencies: Python **3.11+**, PyGObject and GTK **4.8+**. This candidate has been exercised on Arch/Omarchy Linux x86_64; other distributions are not yet claimed as hardware-tested.
+Runtime dependencies: Python **3.11+**, PyGObject and GTK **4.8+**. This release has been exercised on Arch/Omarchy Linux x86_64; other distributions are not yet claimed as hardware-tested.
 
 On Arch:
 
@@ -65,7 +65,7 @@ The four tabs follow the vendor tool's organization, with a dark palette. Narrow
 
 Writing requires firmware **1.07**. Unknown firmware can be read and backed up if its profile is structurally compatible. Glass Mode is preserved; changing polling or lift-off while it is enabled is unsupported.
 
-This candidate does not add firmware updates, macro/keyboard-action authoring, fixed-CPI action authoring, factory reset or live hardware-button notifications. A read refreshes hardware changes; stale profiles are refused before writing. Do not run two configurators simultaneously; the advisory lock coordinates instances of this app only.
+This release does not include firmware updates, macro/keyboard-action authoring, fixed-CPI action authoring, factory reset or live hardware-button notifications. A read refreshes hardware changes; stale profiles are refused before writing. Do not run two configurators simultaneously; the advisory lock coordinates instances of this app only.
 
 Hardware configuration and persistence are separate from physical effects: stored values do not establish real CPI accuracy, effective USB report rate, sensor filtering, lift-off distance or click latency. Those measurements remain explicitly unverified.
 

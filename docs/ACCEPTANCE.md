@@ -1,6 +1,6 @@
-# Acceptance matrix — 1.0.0-rc.1
+# Acceptance matrix — 1.0.0
 
-Candidate status: **approved for public prerelease; not a stable release**. Target: OP1 8k v2 (`3367:1978`), firmware **1.07**, Arch/Omarchy Linux x86_64. English UI; vendor-style organization with a dark palette requested by the user.
+Release status: **approved by the user for stable 1.0.0 publication**. Target: OP1 8k v2 (`3367:1978`), firmware **1.07**, Arch/Omarchy Linux x86_64. English UI; vendor-style organization with a dark palette requested by the user.
 
 | Capability | Implemented | Source evidence | Real device evidence | Limit |
 |---|---|---|---|---|
@@ -21,11 +21,12 @@ Candidate status: **approved for public prerelease; not a stable release**. Targ
 | Install / run / remove from archive | Yes | Deterministic build + isolated runtime test | No development tree required | Arch isolation and Ubuntu 24.04 CI; Ubuntu hardware not tested |
 | GitHub CI | Passed | [Initial Ubuntu run](https://github.com/braga1k/op1-linux/actions/runs/40090864499) | No physical mouse on hosted runner | Final release commit must also pass |
 
-## Release gates
+## Release decision and validation
 
-- Review the candidate UI and supported scope; do not interpret configuration tests as physical-performance certification.
+- User reviewed the UI and explicitly approved stable 1.0.0 publication. Configuration tests do not certify physical performance.
 - Clean-install and layout checks passed locally; review the screenshots and rerun them on the release commit if code changes.
 - User approved public publication as `braga1k/op1-linux`, including a GitHub release.
-- CI passed on the implementation commit; verify the final release commit before uploading assets. This remains a release candidate, with physical-performance limits above.
+- CI passed on the implementation and rc.1 release commits; verify the 1.0.0 commit before uploading assets.
+- Stable status does not extend the tested hardware scope or mark pending physical checks as completed. The limits in the matrix remain applicable.
 
 Known exclusions: firmware flashing, new mouse models, keyboard/macro/fixed-CPI action authoring, factory reset and automatic live profile updates. No claim of zero defects or complete Windows-tool parity is made.

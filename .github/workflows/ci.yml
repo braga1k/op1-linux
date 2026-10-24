@@ -1,4 +1,4 @@
-name: Candidate validation
+name: Release validation
 on:
   push:
   pull_request:
@@ -39,5 +39,5 @@ jobs:
           /usr/bin/python3 /tmp/op1-installed/lib/op1-linux/packaging/install.py --prefix /tmp/op1-installed --uninstall
       - uses: actions/upload-artifact@v4
         with:
-          name: op1-linux-candidate
+          name: op1-linux-package
           path: dist/

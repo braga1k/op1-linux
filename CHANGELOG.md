@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.0.0 — 2026-10-24
+
+- First stable release, promoted from the reviewed and tested 1.0.0-rc.1.
+- Same application behavior and supported hardware scope as rc.1.
+- Physical-performance measurements and unverified gestures remain explicit in the acceptance matrix.
+
 ## 1.0.0-rc.1 — 2026-10-24
 
 - English interface and public documentation.
