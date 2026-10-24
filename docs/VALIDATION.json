@@ -1,0 +1,515 @@
+{
+  "date": "2026-10-24",
+  "firmware": "1.07",
+  "native_cases": 51,
+  "native_cases_with_effective_change": 45,
+  "native_all_expected": true,
+  "native_all_restored": true,
+  "final_original_equal": true,
+  "official_differential_cases": 15,
+  "physical_reconnect": {
+    "kind": "physical-usb-reconnect",
+    "test_polling_hz": 1000,
+    "disconnect_observed": true,
+    "reconnect_observed": true,
+    "full_payload_persisted": true,
+    "original_restored": true
+  },
+  "physical_sensor_effects_measured": false,
+  "automated_tests": {
+    "total": 36,
+    "gtk_integration": 8,
+    "all_passed": true
+  },
+  "layout": [
+    {
+      "requested": [
+        900,
+        760
+      ],
+      "actual": [
+        900,
+        760
+      ],
+      "page": "Basic",
+      "compact": false,
+      "controls": [
+        {
+          "name": "read",
+          "fits": true
+        },
+        {
+          "name": "backup",
+          "fits": true
+        },
+        {
+          "name": "restore",
+          "fits": true
+        },
+        {
+          "name": "apply",
+          "fits": true
+        }
+      ]
+    },
+    {
+      "requested": [
+        900,
+        760
+      ],
+      "actual": [
+        900,
+        760
+      ],
+      "page": "Advanced Sensor",
+      "compact": false,
+      "controls": [
+        {
+          "name": "read",
+          "fits": true
+        },
+        {
+          "name": "backup",
+          "fits": true
+        },
+        {
+          "name": "restore",
+          "fits": true
+        },
+        {
+          "name": "apply",
+          "fits": true
+        }
+      ]
+    },
+    {
+      "requested": [
+        900,
+        760
+      ],
+      "actual": [
+        900,
+        760
+      ],
+      "page": "Buttons",
+      "compact": false,
+      "controls": [
+        {
+          "name": "read",
+          "fits": true
+        },
+        {
+          "name": "backup",
+          "fits": true
+        },
+        {
+          "name": "restore",
+          "fits": true
+        },
+        {
+          "name": "apply",
+          "fits": true
+        }
+      ]
+    },
+    {
+      "requested": [
+        900,
+        760
+      ],
+      "actual": [
+        900,
+        760
+      ],
+      "page": "Button Mapping",
+      "compact": false,
+      "controls": [
+        {
+          "name": "read",
+          "fits": true
+        },
+        {
+          "name": "backup",
+          "fits": true
+        },
+        {
+          "name": "restore",
+          "fits": true
+        },
+        {
+          "name": "apply",
+          "fits": true
+        }
+      ]
+    },
+    {
+      "requested": [
+        520,
+        780
+      ],
+      "actual": [
+        520,
+        780
+      ],
+      "page": "Basic",
+      "compact": true,
+      "controls": [
+        {
+          "name": "read",
+          "fits": true
+        },
+        {
+          "name": "backup",
+          "fits": true
+        },
+        {
+          "name": "restore",
+          "fits": true
+        },
+        {
+          "name": "apply",
+          "fits": true
+        }
+      ]
+    },
+    {
+      "requested": [
+        520,
+        780
+      ],
+      "actual": [
+        520,
+        780
+      ],
+      "page": "Advanced Sensor",
+      "compact": true,
+      "controls": [
+        {
+          "name": "read",
+          "fits": true
+        },
+        {
+          "name": "backup",
+          "fits": true
+        },
+        {
+          "name": "restore",
+          "fits": true
+        },
+        {
+          "name": "apply",
+          "fits": true
+        }
+      ]
+    },
+    {
+      "requested": [
+        520,
+        780
+      ],
+      "actual": [
+        520,
+        780
+      ],
+      "page": "Buttons",
+      "compact": true,
+      "controls": [
+        {
+          "name": "read",
+          "fits": true
+        },
+        {
+          "name": "backup",
+          "fits": true
+        },
+        {
+          "name": "restore",
+          "fits": true
+        },
+        {
+          "name": "apply",
+          "fits": true
+        }
+      ]
+    },
+    {
+      "requested": [
+        520,
+        780
+      ],
+      "actual": [
+        520,
+        780
+      ],
+      "page": "Button Mapping",
+      "compact": true,
+      "controls": [
+        {
+          "name": "read",
+          "fits": true
+        },
+        {
+          "name": "backup",
+          "fits": true
+        },
+        {
+          "name": "restore",
+          "fits": true
+        },
+        {
+          "name": "apply",
+          "fits": true
+        }
+      ]
+    },
+    {
+      "requested": [
+        400,
+        640
+      ],
+      "actual": [
+        400,
+        640
+      ],
+      "page": "Basic",
+      "compact": true,
+      "controls": [
+        {
+          "name": "read",
+          "fits": true
+        },
+        {
+          "name": "backup",
+          "fits": true
+        },
+        {
+          "name": "restore",
+          "fits": true
+        },
+        {
+          "name": "apply",
+          "fits": true
+        }
+      ]
+    },
+    {
+      "requested": [
+        400,
+        640
+      ],
+      "actual": [
+        400,
+        640
+      ],
+      "page": "Advanced Sensor",
+      "compact": true,
+      "controls": [
+        {
+          "name": "read",
+          "fits": true
+        },
+        {
+          "name": "backup",
+          "fits": true
+        },
+        {
+          "name": "restore",
+          "fits": true
+        },
+        {
+          "name": "apply",
+          "fits": true
+        }
+      ]
+    },
+    {
+      "requested": [
+        400,
+        640
+      ],
+      "actual": [
+        400,
+        640
+      ],
+      "page": "Buttons",
+      "compact": true,
+      "controls": [
+        {
+          "name": "read",
+          "fits": true
+        },
+        {
+          "name": "backup",
+          "fits": true
+        },
+        {
+          "name": "restore",
+          "fits": true
+        },
+        {
+          "name": "apply",
+          "fits": true
+        }
+      ]
+    },
+    {
+      "requested": [
+        400,
+        640
+      ],
+      "actual": [
+        400,
+        640
+      ],
+      "page": "Button Mapping",
+      "compact": true,
+      "controls": [
+        {
+          "name": "read",
+          "fits": true
+        },
+        {
+          "name": "backup",
+          "fits": true
+        },
+        {
+          "name": "restore",
+          "fits": true
+        },
+        {
+          "name": "apply",
+          "fits": true
+        }
+      ]
+    }
+  ],
+  "layout_scale_2": [
+    {
+      "requested": [
+        800,
+        1200
+      ],
+      "actual": [
+        800,
+        1200
+      ],
+      "page": "Basic",
+      "compact": false,
+      "controls": [
+        {
+          "name": "read",
+          "fits": true
+        },
+        {
+          "name": "backup",
+          "fits": true
+        },
+        {
+          "name": "restore",
+          "fits": true
+        },
+        {
+          "name": "apply",
+          "fits": true
+        }
+      ]
+    },
+    {
+      "requested": [
+        800,
+        1200
+      ],
+      "actual": [
+        800,
+        1200
+      ],
+      "page": "Advanced Sensor",
+      "compact": false,
+      "controls": [
+        {
+          "name": "read",
+          "fits": true
+        },
+        {
+          "name": "backup",
+          "fits": true
+        },
+        {
+          "name": "restore",
+          "fits": true
+        },
+        {
+          "name": "apply",
+          "fits": true
+        }
+      ]
+    },
+    {
+      "requested": [
+        800,
+        1200
+      ],
+      "actual": [
+        800,
+        1200
+      ],
+      "page": "Buttons",
+      "compact": false,
+      "controls": [
+        {
+          "name": "read",
+          "fits": true
+        },
+        {
+          "name": "backup",
+          "fits": true
+        },
+        {
+          "name": "restore",
+          "fits": true
+        },
+        {
+          "name": "apply",
+          "fits": true
+        }
+      ]
+    },
+    {
+      "requested": [
+        800,
+        1200
+      ],
+      "actual": [
+        800,
+        1200
+      ],
+      "page": "Button Mapping",
+      "compact": false,
+      "controls": [
+        {
+          "name": "read",
+          "fits": true
+        },
+        {
+          "name": "backup",
+          "fits": true
+        },
+        {
+          "name": "restore",
+          "fits": true
+        },
+        {
+          "name": "apply",
+          "fits": true
+        }
+      ]
+    }
+  ],
+  "clean_install": {
+    "isolation": "bubblewrap user/mount/network namespace, empty HOME, package archive only, system Python/GTK, private Broadway display",
+    "result": "pass: install, arbitrary working directory, GTK demo, no-device worker, upgrade, uninstall",
+    "host": "Arch/Omarchy Linux x86_64",
+    "python": "3.14",
+    "gtk": "4.24"
+  }
+}

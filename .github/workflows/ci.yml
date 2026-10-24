@@ -1,0 +1,43 @@
+name: Candidate validation
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install runtime test dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y python3-gi gir1.2-gtk-4.0 xvfb dbus-x11
+      - name: Static checks
+        run: |
+          python -m pip install ruff==0.14.1
+          ruff check op1 packaging scripts
+          ruff format --check op1 packaging scripts tests
+      - name: Protocol and transaction regressions
+        run: /usr/bin/python3 -m unittest discover -s tests -v
+      - name: GTK integration
+        run: xvfb-run -a env OP1_TEST_GUI=1 /usr/bin/python3 -m unittest discover -s tests -p test_gui.py -v
+      - name: Build and verify deterministic archive
+        run: |
+          /usr/bin/python3 scripts/build-release.py dist
+          /usr/bin/python3 scripts/build-release.py /tmp/op1-rebuild
+          cmp dist/SHA256SUMS /tmp/op1-rebuild/SHA256SUMS
+      - name: Install and run the delivered artifact
+        run: |
+          mkdir /tmp/op1-package
+          tar -xzf dist/op1-linux-*.tar.gz -C /tmp/op1-package
+          /tmp/op1-package/op1-linux-*/install.sh --prefix /tmp/op1-installed
+          cd /tmp
+          /tmp/op1-installed/bin/op1-linux --version
+          xvfb-run -a /tmp/op1-installed/bin/op1-linux --demo --smoke
+          /usr/bin/python3 /tmp/op1-installed/lib/op1-linux/packaging/install.py --prefix /tmp/op1-installed --uninstall
+      - uses: actions/upload-artifact@v4
+        with:
+          name: op1-linux-candidate
+          path: dist/

@@ -1,0 +1,2 @@
+# OP1 Linux: HID access for the active local session, Endgame Gear OP1 8k v2 only.
+SUBSYSTEM=="hidraw", ATTRS{idVendor}=="3367", ATTRS{idProduct}=="1978", TAG+="uaccess"

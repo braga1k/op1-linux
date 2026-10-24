@@ -1,0 +1,7 @@
+/tools/
+/data/
+/validation/
+/dist/
+/evidence/
+__pycache__/
+*.pyc

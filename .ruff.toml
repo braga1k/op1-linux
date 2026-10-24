@@ -1,0 +1,3 @@
+[lint.per-file-ignores]
+"op1/gui.py" = ["E402"] # gi.require_version must run before GTK imports.
+"scripts/build-release.py" = ["E402"] # Use the source package for its version.

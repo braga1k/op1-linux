@@ -1,0 +1,15 @@
+OP1 Linux — unofficial Endgame Gear OP1 8k v2 configurator
+Copyright (C) 2026 Vitor Ferreira and contributors
+
+Licensed under the GNU Affero General Public License, version 3 (AGPL-3.0).
+See LICENSE. No warranty is provided.
+
+Protocol reference and implementation consulted:
+UnofficialEGGWebConfig by qsxcv and contributors (AGPL-3.0)
+https://github.com/qsxcv/UnofficialEGGWebConfig
+Reference revision: cc246318fc50df6dc05b6564b8ca02a6c2eaab50
+
+Additional analysis performed with REA 6.7.0 and Ghidra 12.1.4.
+These tools are not bundled with or required by the installed application.
+Endgame Gear trademarks belong to their owners. This project is not affiliated
+with or endorsed by Endgame Gear. Vendor executables and firmware are not included.
