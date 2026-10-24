@@ -1,6 +1,6 @@
 # Changelog
 
-## 1.0.0-rc.1 — unreleased
+## 1.0.0-rc.1 — 2026-10-24
 
 - English interface and public documentation.
 - Vendor-style four-tab organization, dark background and responsive tiling layouts.

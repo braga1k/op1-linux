@@ -1,6 +1,6 @@
 # Acceptance matrix — 1.0.0-rc.1
 
-Candidate status: **ready for review, not a published stable release**. Target: OP1 8k v2 (`3367:1978`), firmware **1.07**, Arch/Omarchy Linux x86_64. English UI; vendor-style organization with a dark palette requested by the user.
+Candidate status: **approved for public prerelease; not a stable release**. Target: OP1 8k v2 (`3367:1978`), firmware **1.07**, Arch/Omarchy Linux x86_64. English UI; vendor-style organization with a dark palette requested by the user.
 
 | Capability | Implemented | Source evidence | Real device evidence | Limit |
 |---|---|---|---|---|
@@ -17,15 +17,15 @@ Candidate status: **ready for review, not a published stable release**. Target: 
 | Persistence on USB reconnect | Yes | Independent removal/re-enumeration observation | 1000 Hz profile persisted; original 4000 Hz restored | One profile combination tested |
 | Permissions / missing / busy / malformed / stale / failed write | Yes | Structured errors + fault injection | Access rule and reconnect verified | Physical unplug during a write not attempted |
 | Pending edits / discard / keyboard paths | Yes | GTK integration tests | UI run on Hyprland | Assistive-technology audit not performed |
-| Narrow tiling / scaling | Yes | Responsive containers | 12 page/size checks at 400/520/900 px + four at 2× scale | Final visual preference review remains |
-| Install / run / remove from archive | Yes | Deterministic build + isolated runtime test | No development tree required | Isolated Arch runtime; Ubuntu workflow not yet run remotely |
-| GitHub CI | Defined | `.github/workflows/ci.yml` | Not run remotely before upload | Local checks do not imply a green GitHub run |
+| Narrow tiling / scaling | Yes | Responsive containers | 12 page/size checks at 400/520/900 px + four at 2× scale | Visual review approved by the user |
+| Install / run / remove from archive | Yes | Deterministic build + isolated runtime test | No development tree required | Arch isolation and Ubuntu 24.04 CI; Ubuntu hardware not tested |
+| GitHub CI | Passed | [Initial Ubuntu run](https://github.com/braga1k/op1-linux/actions/runs/40090864499) | No physical mouse on hosted runner | Final release commit must also pass |
 
 ## Release gates
 
 - Review the candidate UI and supported scope; do not interpret configuration tests as physical-performance certification.
 - Clean-install and layout checks passed locally; review the screenshots and rerun them on the release commit if code changes.
-- Confirm the repository name/visibility and publication before creating a remote release.
-- Run the workflow on the actual GitHub commit; inspect that result before calling it a stable published v1.
+- User approved public publication as `braga1k/op1-linux`, including a GitHub release.
+- CI passed on the implementation commit; verify the final release commit before uploading assets. This remains a release candidate, with physical-performance limits above.
 
 Known exclusions: firmware flashing, new mouse models, keyboard/macro/fixed-CPI action authoring, factory reset and automatic live profile updates. No claim of zero defects or complete Windows-tool parity is made.

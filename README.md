@@ -4,6 +4,8 @@ An unofficial native Linux configurator for the **Endgame Gear OP1 8k v2** (`336
 
 **1.0.0-rc.1 is a release candidate.** Configuration read-back is tested on firmware **1.07**. It is not a certification of sensor performance. See the [acceptance matrix](docs/ACCEPTANCE.md) for exact coverage and remaining checks.
 
+[Download the release candidate](https://github.com/braga1k/op1-linux/releases/tag/v1.0.0-rc.1) · [CI](https://github.com/braga1k/op1-linux/actions)
+
 ![Basic settings](docs/screenshots/basic-900.png)
 
 ## Install
